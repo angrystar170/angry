@@ -73,7 +73,9 @@ void setup()
 //   pinMode(SPEZIN, INPUT);
 //   pinMode(SPEZONOFF, INPUT_PULLUP);
 
-  lcd.begin();
+  lcd.init();
+//  lcd.begin();
+  lcd.backlight();
   lcd.clear();
   lcd.setCursor(2, 0);
   lcd.print("Smartie by Wipf");
